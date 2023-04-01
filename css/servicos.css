@@ -1,0 +1,11 @@
+@charset "utf-8";
+/* CSS Document */
+
+.navegacao ul li:nth-child(3) a {
+	color: #2d328c;
+	cursor: text;
+}
+.menu-movel li:nth-child(3) a {
+	background: #2d328c;
+	color: #ffffff;
+}

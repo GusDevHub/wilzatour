@@ -1,0 +1,260 @@
+@charset "utf-8";
+/* CSS Document */
+/* redefinicao da template */
+.navegacao ul li:first-child a {
+	color: #2d328c;
+	cursor: text;
+}
+.menu-movel li:first-child a {
+	background: #2d328c;
+	color: #ffffff;
+}
+.titulos, .botao-voltar {
+	display: none;
+	visibility: hidden;
+}
+.corpo {
+	background: url(../img/home-dicas-de-viagem-fundo.png) no-repeat left top;
+	background-size: 100% 58%;
+}
+/* banners */
+.banners {
+	display: block;
+}
+/* RELATIVO A VERSAO DESKTOP */
+@media screen and (max-width: 2000px) and (min-width: 768px) {
+.banners {
+	height: 14vw;
+}
+}
+.banner {
+}
+.banners-nav {
+}
+/* dicas de viagem */
+.dicas {
+	display: block;
+	margin-bottom: 3em;
+	position: relative;
+	z-index: 10;
+}
+.dicas-cabecalho {
+	display: block;
+	height: 3em;
+	position: relative;
+	width: 100%;
+}
+.dicas-titulo {
+	left: 1.2%;
+	max-width: 158px;
+	position: absolute;
+	top: -3.25em;
+}
+.dicas-botao {
+	float: right;
+	max-width: 94px;
+}
+.dica {
+	background: #ffffff;
+	box-shadow: 1px 1.732px 2px 0px rgba(0, 0, 0, 0.082);
+	display: inline-block;
+	width: 30%;
+}
+.dicas div:nth-child(3) {
+	margin-left: 4%;
+	margin-right: 4%;
+}
+.dica img {
+	display: block;
+	width: 100%;
+}
+.dica-chamada {
+	color: #000000;
+	display: block;
+	font-family: 'swis721_cn_btroman';
+	padding: .8em;
+	text-transform: uppercase;
+}
+.dica-chamada:hover {
+	color: #e82129;
+	text-decoration: none;
+}
+.dica-icone {
+	background: url(../img/icone-seta-verde-pq.jpg) no-repeat left top;
+	display: block;
+	float: right;
+	height: 12px;
+	margin-top: .2em;
+	width: 17px;
+}
+/* noticias */
+.noticias {
+	display: inline-block;
+	float: left;
+	width: 30%;
+}
+.noticias-cabecalho {
+	display: block;
+	height: 5em;
+}
+.noticias-titulo {
+	max-width: 250px;
+}
+.noticias-botao {
+	max-width: 94px;
+}
+.noticia {
+	background: #f9f9f9;
+	border: solid 1px transparent;
+	display: block;
+	font-family: 'swis721_lt_btlight';
+	font-size: .8em;
+	padding: .4em .6em;
+	text-align: justify;
+}
+.noticias div:nth-child(3) {
+	background: #fcf9f9;
+	margin-top: 1px;
+}
+.noticia:hover {
+	border: solid 1px #dc3d3d;
+}
+.noticia a {
+	color: #000000;
+}
+.noticia a:hover {
+	text-decoration: none;
+}
+.noticia-titulo {
+	color: #2d328c;
+	display: block;
+}
+.noticia-data {
+	color: #dc3d3d;
+	display: block;
+}
+/* cotacoes */
+#cotacoes {
+	display: inline-block;
+	float: left;
+	padding-top: 3.2em;
+	text-align: center;
+	width: 38.5%
+}
+/* clima */
+#clima {
+	display: inline-block;
+	float: left;
+	height: 16em;
+	width: 30%;
+}
+.clima {
+
+}
+/* mapa */
+#mapa {
+	border-bottom: dashed 1px #ec212a;
+	border-top: solid 3px #ec212a;
+	display: block;
+	float: left;
+	height: 25.2vw;
+	margin-top: 1.5em;
+	position: relative;
+	width: 100%;
+	z-index: 5 !important;
+}
+.mapa {
+	display: block;
+	left: 0px;
+	margin-bottom: 11px;
+	position: absolute;
+	top: 0px;
+	width: 100%;
+	z-index: 5 !important;
+}
+#mapa a {
+	display: block;
+	height: 100%;
+	position: relative;
+	width: 100%;
+	z-index: 9 !important;
+}
+.mapa-efeito {
+	display: block;
+	left: 0px;
+	position: absolute;
+	top: 0px;
+	width: 100%;
+	z-index: 8 !important;
+}
+/* RELATIVO A RESOLUCAO MAXIMA 1202 */
+@media screen and (max-width: 1202px) {
+.noticias-titulo {
+	width: 60%;
+}
+}
+/* RELATIVO A RESOLUCAO MAXIMA 1060 */
+@media screen and (max-width: 1060px) {
+.dicas div:nth-child(3) {
+margin-left: 2%;
+margin-right: 2%;
+}
+}
+/* RELATIVO A RESOLUCAO MAXIMA 868 */
+@media screen and (max-width: 868px) {
+.noticias-titulo {
+	width: 50%;
+}
+}
+/* RELATIVO A VERSAO MOVEL */
+@media screen and (max-width: 767px) and (min-width: 176px) {
+.banners {
+	height: 8em;
+}
+.corpo {
+	background-size: 100% 48%;
+	margin-top: 1.5em;
+}
+.dicas-cabecalho {
+	height: 5em;
+}
+.dicas-titulo {
+	left: -1em;
+	top: -1.3em;
+}
+.dica {
+	display: block;
+	float: none;
+	margin-left: 2%;
+	margin-right: 2%;
+	width: 96%
+}
+.dicas div:nth-child(3) {
+	margin: 2em 2%;
+}
+.noticias {
+	display: block;
+	float: none;
+	width: 100%;
+}
+.noticias-titulo {
+	width: 60%;
+}
+.noticias-botao {
+	float: right;
+}
+#cotacoes {
+	border-bottom: solid 1px #2d328c;
+	border-top: solid 1px #2d328c;
+	display: block;
+	float: none;
+	margin: 2em 0;
+	padding-top: 0;
+	width: 100%;
+}
+#clima {
+	display: block;
+	float: none;
+	width: 100%;
+}
+}
